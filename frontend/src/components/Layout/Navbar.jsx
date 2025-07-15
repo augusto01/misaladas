@@ -9,7 +9,7 @@ const Navbar = () => {
     { label: 'HCD', path: '/hcd' },
     { label: 'Boletines', path: '/boletines' },
     { label: 'Carta Orgánica', path: '/carta-organica' },
-    { label: 'Ubicación', path: '/ubicacion' },
+    { label: 'Visítanos', path: '/ubicacion' },
     { label: 'Galería', path: '/galeria' },
     { label: 'Contacto', path: '/contacto' },
   ];

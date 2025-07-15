@@ -1,35 +1,51 @@
 import '../styles/Aside.css';
+import { Link } from 'react-router-dom';
 
 const Aside = () => {
   const sections = [
     {
       title: 'Turismo',
       items: [
-        'Ubicación',
-        'Fiestas Patronales',
-        'Fiesta Provincial de la Miel y Expo Saladas',
-        'Museo Histórico',
-        'Sargento Cabral',
-        'Estudiantina',
-        'La Ciudad',
-        'Carnavales',
+        { label: 'Carnavales', path: '/carnavales' },
+        { label: 'Fiesta Provincial de la Miel y Expo Saladas', path: '/ubicacion#fiesta-miel' },
+        { label: 'Fiestas Patronales', path: '/ubicacion#fiestas-patronales' },
+        { label: 'Museo Histórico', path: '/museo' },
+        { label: 'Sargento Cabral', path: '/ubicacion#cabral' },
+        { label: 'Estudiantina', path: '/estudiantina' },
+        { label: 'La Ciudad', path: '/ubicacion' },
       ],
     },
     {
       title: 'Cultura',
-      items: ['Solicitar Turno', 'Comprar Entradas', 'Contacto'],
+      items: [
+        { label: 'Solicitar Turno', path: '/turnos' },
+        { label: 'Comprar Entradas', path: '/entradas' },
+        { label: 'Contacto', path: '/contacto' },
+      ],
     },
     {
       title: 'Economía Regional',
-      items: ['Solicitar Turno', 'Comprar Entradas', 'Contacto'],
+      items: [
+        { label: 'Solicitar Turno', path: '/turnos' },
+        { label: 'Comprar Entradas', path: '/entradas' },
+        { label: 'Contacto', path: '/contacto' },
+      ],
     },
     {
       title: 'Boletines',
-      items: ['Solicitar Turno', 'Comprar Entradas', 'Contacto'],
+      items: [
+        { label: 'Solicitar Turno', path: '/turnos' },
+        { label: 'Comprar Entradas', path: '/entradas' },
+        { label: 'Contacto', path: '/contacto' },
+      ],
     },
     {
       title: 'Contacto',
-      items: ['Solicitar Turno', 'Comprar Entradas', 'Contacto'],
+      items: [
+        { label: 'Solicitar Turno', path: '/turnos' },
+        { label: 'Comprar Entradas', path: '/entradas' },
+        { label: 'Contacto', path: '/contacto' },
+      ],
     },
   ];
 
@@ -41,7 +57,7 @@ const Aside = () => {
           <ul className="card-list">
             {section.items.map((item, i) => (
               <li key={i}>
-                <a href="#">{item}</a>
+                <Link to={item.path}>{item.label}</Link>
               </li>
             ))}
           </ul>
