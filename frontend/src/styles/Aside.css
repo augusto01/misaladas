@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.aside-container {
+  width: 100%;
+  max-width: 280px;
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.custom-card {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-title {
+  background-color: #7c0a02; /* bordó institucional */
+  color: white;              /* <-- esto fuerza el texto en blanco */
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+.card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-list li {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-list a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #eaeaea;
+  text-decoration: none;
+  transition: background-color 0.3s, padding-left 0.3s;
+}
+
+.card-list a:hover {
+  background-color: #a51c30; /* rojo vino */
+  padding-left: 1.5rem;
+  color: #fff;
+}

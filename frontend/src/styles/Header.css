@@ -1,0 +1,25 @@
+header {
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.header-logo {
+  height: 10rem; /* ajusta el tamaño */
+  cursor: pointer; /* opcional, si querés que se note que es clickeable */
+}
+
+
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
