@@ -107,6 +107,10 @@ const Carnavales = () => {
         </p>
       </div>
 
+
+        
+
+
       <div className="carnavales-subsection">
             <h3 className="titulo-con-borde">Comparsas y Agrupaciones</h3>
 

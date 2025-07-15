@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 import '../../styles/Navbar.css';
 
 const Navbar = () => {
@@ -35,11 +36,17 @@ const Navbar = () => {
           <ul className="navbar-nav text-center">
             {links.map((link, idx) => (
               <li className="nav-item" key={idx}>
-                <Link className="nav-link" to={link.path}>
+                <NavLink
+                  className={({ isActive }) =>
+                    `nav-link ${isActive ? 'active-link' : ''}`
+                  }
+                  to={link.path}
+                >
                   {link.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
+
           </ul>
         </div>
       </div>
