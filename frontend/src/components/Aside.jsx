@@ -1,4 +1,5 @@
 import '../styles/Aside.css';
+import Buscador from './Buscador.jsx';
 import { Link } from 'react-router-dom';
 
 const Aside = () => {
@@ -51,6 +52,7 @@ const Aside = () => {
 
   return (
     <aside className="aside-container">
+      <Buscador onBuscar={(filtros) => console.log(filtros)} />
       {sections.map((section, index) => (
         <div className="custom-card" key={index}>
           <div className="card-title">{section.title}</div>

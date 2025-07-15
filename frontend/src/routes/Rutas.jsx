@@ -26,6 +26,11 @@ import CarismaShow from '../components/pages/comparsas/CarismaShow';
 import Ibera from '../components/pages/comparsas/Ibera';
 import Xango from '../components/pages/comparsas/Xango';
 
+// Importar NoticiaDetalle
+import NoticiaDetalle from '../components/pages/NoticiaDetalle';
+
+
+
 const Rutas = () => {
   return (
     <Routes>
@@ -46,6 +51,12 @@ const Rutas = () => {
       {/* Turismo / Cultura */}
       <Route path="/museo" element={<Museo />} />
       <Route path="/estudiantina" element={<Estudiantina />} />
+
+      {/* Noticias */}
+      <Route path="/noticias/:id" element={<NoticiaDetalle />} />
+      <Route path="/noticias/1" element={<NoticiaDetalle />} />
+
+
 
       {/* Carnavales y agrupaciones */}
       <Route path="/carnavales" element={<Carnavales />} />

@@ -1,0 +1,18 @@
+.buscador-container {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.buscador-container input[type="text"],
+.buscador-container input[type="date"] {
+  border: 2px solid #a31e4a;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.buscador-container button {
+  font-weight: bold;
+  border: 2px solid #df0204;
+}
